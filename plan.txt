@@ -1,12 +1,6 @@
-Sketch:
+CHECK AFTER SEEING THE ANSWER:
 ------------------------------------------------------------------
-- global vars: font, colors, font-color, 
-- overview:
-  <main>
-    <figure>
-    <section details>
-    <nav>
-  </main>
+web responsiveness of top margin of image
 
 
 TO DOs:
