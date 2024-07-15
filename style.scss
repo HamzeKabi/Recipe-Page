@@ -178,7 +178,7 @@ main {
       border-color:$dark-charcoal;
       text-align: left;
       width: 100%;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
 
       tr:not(:last-child) {
         border-bottom: inset;
@@ -213,7 +213,7 @@ main {
   }
 
   .image-omelette {
-    margin: 5%;
+    margin: 5% !important;
     border-radius: 1rem;
   }
 

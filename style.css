@@ -141,7 +141,7 @@ main .nutrition table {
   border-color: hsl(24, 5%, 18%);
   text-align: left;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 main .nutrition table tr:not(:last-child) {
   border-bottom: inset;
@@ -168,7 +168,7 @@ main .nutrition table tr th, main .nutrition table tr td {
     border-radius: 1rem;
   }
   .image-omelette {
-    margin: 5%;
+    margin: 5% !important;
     border-radius: 1rem;
   }
   .overview {
