@@ -30,9 +30,15 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 46rem; /* 735px */
+  width: 46rem;
   max-width: 100%;
   background-color: hsl(0, 0%, 100%);
+}
+main > *:not(.image-omelette) {
+  width: 86.7%;
+}
+main .overview > h1, main .ingredients > h2, main .instructions > h2, main .nutrition > h2 {
+  font-family: young-serif;
 }
 main .image-omelette {
   width: 40rem;
@@ -40,20 +46,17 @@ main .image-omelette {
   margin: 0 0 5% 0;
 }
 main .overview {
-  width: 86.7%;
   margin-top: -2rem;
 }
 main .overview h1 {
-  font-family: young-serif;
   font-size: 2.188rem;
 }
 main .overview p {
-  font-family: outfit;
   color: hsl(24, 5%, 18%);
+  font-family: outfit;
 }
 main .preparation-time {
   background-color: hsl(330, 100%, 98%);
-  width: 86.7%;
   font-family: outfit;
   border-radius: 1.1rem;
   margin: 1rem 0;
@@ -71,11 +74,7 @@ main .preparation-time ul li {
 main .preparation-time ul ::marker {
   content: "•";
 }
-main .ingredients {
-  width: 86.7%;
-}
 main .ingredients h2 {
-  font-family: young-serif;
   color: hsl(14, 45%, 36%);
   font-size: 1.7rem;
 }
@@ -95,14 +94,7 @@ main .ingredients ul li:before {
   font-size: 1.2rem;
   margin-right: 1.8rem;
 }
-main hr {
-  width: 86.7%;
-}
-main .instructions {
-  width: 86.7%;
-}
 main .instructions h2 {
-  font-family: young-serif;
   color: hsl(14, 45%, 36%);
   font-size: 1.7rem;
 }
@@ -119,14 +111,7 @@ main .instructions ol ::marker {
 main .instructions ol li {
   padding: 0.5rem 0 0.5rem 1rem;
 }
-main hr {
-  @extends hr;
-}
-main .nutrition {
-  width: 86.7%;
-}
 main .nutrition h2 {
-  font-family: young-serif;
   color: hsl(14, 45%, 36%);
   font-size: 1.7rem;
 }
@@ -136,9 +121,9 @@ main .nutrition p {
   width: 90%;
 }
 main .nutrition table {
+  color: hsl(24, 5%, 18%);
   font-family: outfit;
   border-collapse: collapse;
-  border-color: hsl(24, 5%, 18%);
   text-align: left;
   width: 100%;
   margin-bottom: 2rem;

@@ -33,6 +33,16 @@ $dark-charcoal: hsl(24, 5%, 18%);
   justify-content: center;
 }
 
+@mixin outfit-dark-charcoal {
+  color:$dark-charcoal;
+  font-family: outfit;
+}
+
+@mixin h2-style {
+  color: $nutmeg;
+  font-size: 1.7rem;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -45,9 +55,17 @@ body {
 
 main {
   @include flex-properties;
-  width: 46rem; /* 735px */
+  width: 46rem;
   max-width: 100%;
   background-color: $white;
+
+  > *:not(.image-omelette) {
+    width: 86.7%;
+  }
+
+  .overview > h1, .ingredients > h2, .instructions > h2, .nutrition > h2 {
+    font-family: young-serif
+  }
 
   .image-omelette {
   width: 40rem;
@@ -56,39 +74,29 @@ main {
   }
   
   .overview {
-    width: 86.7%;
     margin-top: -2rem;
-
     h1 {
-      font-family: young-serif;
       font-size: 2.188rem;
     }
-
     p {
-      font-family: outfit;
-      color: $dark-charcoal;
+      @include outfit-dark-charcoal;
     }
   }
 
   .preparation-time {
     background-color: $rose-white;
-    width: 86.7%;
     font-family: outfit;
     border-radius: 1.1rem;
     margin: 1rem 0;
-
     h3 {
       color: $dark-raspberry;
       margin-left: 1.65rem;
     }
-
     ul {
       color:$dark-charcoal;
-
       li {
         padding: 0.5rem 0.5rem 0.5rem 1.4rem;
       }
-
       ::marker {
         content: "•";
       }
@@ -96,24 +104,17 @@ main {
   }
 
   .ingredients {
-    width: 86.7%;
     h2 {
-      font-family: young-serif;
-      color: $nutmeg;
-      font-size: 1.7rem;
+      @include h2-style;
     }
-
     ul {
-      color:$dark-charcoal;
-      font-family: outfit;
+      @include outfit-dark-charcoal;
       padding: 0;
       list-style-type: none;
-
       li {
         display: flex;
         align-items: center;
         padding: 0.5rem 0;
-        
         &:before {
           content: "•";
           font-size: 1.2rem;
@@ -123,81 +124,52 @@ main {
     }
   }
 
-  hr {
-    width: 86.7%;
-  }
-
   .instructions {
-    width: 86.7%;
-
     h2 {
-      font-family: young-serif;
-      color: $nutmeg;
-      font-size: 1.7rem;
+      @include h2-style;
     }
-
     ol {
-      color:$dark-charcoal;
-      font-family: outfit;
+      @include outfit-dark-charcoal;
       width: 100%;
       margin-inline-start: -16px;
-
       ::marker {
         font-weight: bold;
         color: $nutmeg;
       }
-      
       li {
         padding: 0.5rem 0 0.5rem 1rem;
       }
     }
   }
 
-  hr {
-    @extends hr;
-  }
-
   .nutrition {
-    width: 86.7%;
-
     h2 {
-      font-family: young-serif;
-      color: $nutmeg;
-      font-size: 1.7rem;
+      @include h2-style;
     }
-
     p {
-      color:$dark-charcoal;
-      font-family: outfit;
+      @include outfit-dark-charcoal;
       width: 90%
     }
-
     table {
-      font-family: outfit;
+      @include outfit-dark-charcoal;
       border-collapse: collapse;
-      border-color:$dark-charcoal;
       text-align: left;
       width: 100%;
       margin-bottom: 2rem;
-
       tr:not(:last-child) {
         border-bottom: inset;
       }
-
       tr {
         color:$dark-charcoal;
-  
       th {
           padding-left: 2rem;
           font-weight: lighter;
         }
-
       td {
         font-weight: bold;
         padding-left: 4.5rem;
         color: $nutmeg;
       }
-  
       th, td {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
@@ -211,16 +183,13 @@ main {
   main {
     border-radius: 1rem;
   }
-
   .image-omelette {
     margin: 5% !important;
     border-radius: 1rem;
   }
-
   .overview {
     width: 90%;
   }
-
   .main-heading {
     font-family: young-serif;
     font-size: 2.5rem;
