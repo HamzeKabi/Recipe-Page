@@ -1,8 +1,3 @@
-/*
-- Mobile: 375px
-- Desktop: 1440px
-*/
-
 :root {
   font-size: 16px;
 }
@@ -54,15 +49,10 @@ main {
   max-width: 100%;
   background-color: $white;
 
-  figure {
-    @include size-reset;
-    @include flex-properties;
-
-    .image-omelette {
-    width: 40rem;
-    max-width: 100vw;
-    margin: 0 5% 5% 5%;
-    }
+  .image-omelette {
+  width: 40rem;
+  max-width: 100vw;
+  margin: 0 0 5% 0;
   }
   
   .overview {
@@ -85,6 +75,7 @@ main {
     width: 86.7%;
     font-family: outfit;
     border-radius: 1.1rem;
+    margin: 1rem 0;
 
     h3 {
       color: $dark-raspberry;
@@ -153,6 +144,7 @@ main {
 
       ::marker {
         font-weight: bold;
+        color: $nutmeg;
       }
       
       li {
@@ -174,11 +166,44 @@ main {
       font-size: 1.7rem;
     }
 
-  p {
-    color:$dark-charcoal;
-    font-family: outfit;
-    width: 80%;
-  }
+    p {
+      color:$dark-charcoal;
+      font-family: outfit;
+      width: 90%
+    }
+
+    table {
+      font-family: outfit;
+      border-collapse: collapse;
+      border-color:$dark-charcoal;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 1rem;
+
+      tr:not(:last-child) {
+        border-bottom: inset;
+      }
+
+      tr {
+        color:$dark-charcoal;
+  
+      th {
+          padding-left: 2rem;
+          font-weight: lighter;
+        }
+
+      td {
+        font-weight: bold;
+        padding-left: 4.5rem;
+        color: $nutmeg;
+      }
+  
+      th, td {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+      }
+    }
   }
 }
 
@@ -188,7 +213,7 @@ main {
   }
 
   .image-omelette {
-    margin-top: 5%;
+    margin: 5%;
     border-radius: 1rem;
   }
 

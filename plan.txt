@@ -1,3 +1,7 @@
+ISSUES:
+------------------------------------------------------------------
+top margin of image
+
 CHECK AFTER SEEING THE ANSWER:
 ------------------------------------------------------------------
 web responsiveness of top margin of image
