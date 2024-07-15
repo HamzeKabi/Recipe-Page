@@ -14,17 +14,14 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
 ### Screenshot
 
-![Desktop screenshot](E:\coding\ht\frontend-practices\recipe page mentor io\Recipe-Page\screenshots\recipe-page-desktop-screenshot.jpeg)
+![Desktop screenshot](https://github.com/HamzeKabi/Recipe-Page/blob/5b0808ae05596b9b5114aaa61ea321d3cc919d64/screenshots/recipe-page-desktop-screenshot.png)
 
-[mobile screenshot](E:\coding\ht\frontend-practices\recipe page mentor io\Recipe-Page\screenshots\recipe-page-mobile-screenshot.jpeg)
+[mobile screenshot](https://github.com/HamzeKabi/Recipe-Page/blob/5b0808ae05596b9b5114aaa61ea321d3cc919d64/screenshots/recipe-page-mobile-screenshot.png)
 
 ### Links
 
@@ -43,10 +40,10 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### What I learned
 
-- I learned using sassy css, and it's robust features like mixin, nesting.
+- I learned using sassy css, and it's robust features like mixin and nesting.
 - Redundancy reduction using combinators
-- Using !important(as last resort)
-- Using media queries for screen sizes bigger than mobile screens(Mobile-first workflow)
+- Using !important (as the last resort)
+- Using media queries for screen sizes bigger than mobile screens (Mobile-first workflow)
 - Further information about MIME types
 
 ### Continued development
